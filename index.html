@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Config</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Nav bar atas -->
+    <div class="wrapper">
+        <nav class="topnav" id="topnav">
+            <div class="hamburger_menu">
+            <!-- Hamburgernya taruh disini yak :) aku mager bikin hamburgernya -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024">
+                    <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"/>
+                </svg>
+            </div>
+            <div class="logo">
+                <img src="iot.png" width="100">
+            </div>
+
+            <div class="logout">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M160 416H96c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h64c17.67 0 32-14.33 32-32S177.7 32 160 32H96C42.98 32 0 74.98 0 128v256c0 53.02 42.98 96 96 96h64c17.67 0 32-14.33 32-32S177.7 416 160 416zM502.6 233.4l-128-128c-12.51-12.51-32.76-12.49-45.25 0c-12.5 12.5-12.5 32.75 0 45.25L402.8 224H192C174.3 224 160 238.3 160 256s14.31 32 32 32h210.8l-73.38 73.38c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0l128-128C515.1 266.1 515.1 245.9 502.6 233.4z"/>
+                </svg>
+            </div>
+        </nav>
+    </div>
+    <!-- NavBar Bawah -->
+    <nav class="botnav" id="botnav">
+        <div class="box tablinks" onclick="openTab(event, 'Info')">
+            <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024">
+                    <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"/>
+                    <path d="M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="box tablinks" onclick="openTab(event, 'Wifi')">
+            <div class="icon-box">
+                <svg  xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024">
+                    <path d="M723 620.5C666.8 571.6 593.4 542 513 542s-153.8 29.6-210.1 78.6a8.1 8.1 0 0 0-.8 11.2l36 42.9c2.9 3.4 8 3.8 11.4.9C393.1 637.2 450.3 614 513 614s119.9 23.2 163.5 61.5c3.4 2.9 8.5 2.5 11.4-.9l36-42.9c2.8-3.3 2.4-8.3-.9-11.2zm117.4-140.1C751.7 406.5 637.6 362 513 362s-238.7 44.5-327.5 118.4a8.05 8.05 0 0 0-1 11.3l36 42.9c2.8 3.4 7.9 3.8 11.2 1C308 472.2 406.1 434 513 434s205 38.2 281.2 101.6c3.4 2.8 8.4 2.4 11.2-1l36-42.9c2.8-3.4 2.4-8.5-1-11.3zm116.7-139C835.7 241.8 680.3 182 511 182c-168.2 0-322.6 59-443.7 157.4a8 8 0 0 0-1.1 11.4l36 42.9c2.8 3.3 7.8 3.8 11.1 1.1C222 306.7 360.3 254 511 254c151.8 0 291 53.5 400 142.7 3.4 2.8 8.4 2.3 11.2-1.1l36-42.9c2.9-3.4 2.4-8.5-1.1-11.3zM448 778a64 64 0 1 0 128 0 64 64 0 1 0-128 0z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="box tablinks" onclick="openTab(event, 'Broker')">
+            <div class="icon-box">
+                <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="m18 3.70825c1.2447 1.41027 2 3.26276 2 5.29165 0 2.0289-.7553 3.8814-2 5.2916m-12-10.58325c-1.24473 1.41027-2 3.26276-2 5.29165 0 2.0289.75527 3.8814 2 5.2916"/>
+                    <path d="m15 6.35425c.6224.70513 1 1.63138 1 2.64582 0 1.01443-.3776 1.94073-1 2.64583m-6-5.29165c-.62236.70513-1 1.63138-1 2.64582 0 1.01443.37764 1.94073 1 2.64583"/><path d="m12 9v11"/></g>
+                </svg>
+            </div>
+        </div>
+        <div class="box tablinks" onclick="openTab(event, 'Device')" id="defaultOpen">
+            <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0V0zm0 0h24v24H0V0z" fill="none"/>
+                    <path d="M16 4.2c1.5 0 3 .6 4.2 1.7l.8-.8C19.6 3.7 17.8 3 16 3s-3.6.7-5 2.1l.8.8C13 4.8 14.5 4.2 16 4.2zm-3.3 2.5l.8.8c.7-.7 1.6-1 2.5-1s1.8.3 2.5 1l.8-.8c-.9-.9-2.1-1.4-3.3-1.4s-2.4.5-3.3 1.4zM19 13h-2V9h-2v4H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6H5v-4h14v4zM6 16h2v2H6zm3.5 0h2v2h-2zm3.5 0h2v2h-2z"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+
+    <div id="main_content" class="info">
+        <!-- INFO PAGE -->
+        <div class="tabcontent" id="Info">
+            <div class="title">
+                <h1>Config Device</h1>
+                <p>Alarm Smart Poultry 4 in 1 MQTT V1</p>
+            </div>
+            <div class="container">
+                <div class="container-item">
+                    <span class="itemTitle">IP</span>
+                </div>
+                <div class="container-item">
+                    <span class="itemTitle">RSSI</span>
+                </div>
+                <div class="container-item">
+                    <span class="itemTitle">Firmware</span>
+                </div>
+            </div>
+        </div>
+        <!-- WiFi PAGE -->
+        <div class="tabcontent" id="Wifi">
+            <div class="title2">
+                <h1>WiFi Configuration</h1>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="ssid" id="ssid">
+                        SSID
+                    </label>
+                    <input type="text" id="ssid" placeholder="Set SSID" />
+                </div>
+
+                <div class="form-control">
+                    <label for="password" id="password">
+                        Password
+                    </label>
+                    <input type="password" id="password" placeholder="Set Password" />
+                </div>
+
+                <div class="form-control">
+                    <label for="ip" id="ip">
+                        Jenis IP
+                    </label>
+                        
+                        <!-- Dropdown options -->
+                    <select name="ip" id="ip"  onchange="changeIp(this.value)">
+                        <option value="statis">Statis</option>
+                        <option value="dinamis">Dinamis</option>
+                    </select>
+                </div>
+                <div id="option">
+                    <div class="form-control">
+                        <label for="address" id="address">
+                            IP Address
+                        </label>        
+                        <input type="text" id="address" placeholder="Set IP Address" />
+                    </div>
+
+                    <div class="form-control">
+                        <label for="subnet" id="subnet">
+                            Subnet Mask
+                        </label>            
+                        <input type="text" id="subnet" placeholder="Set Subnet Mask" />
+                    </div>
+                    <div class="form-control">
+                        <label for="gateway" id="gateway">
+                            Gateway
+                        </label>                           
+                        <input type="text" id="gateway" placeholder="Set Gateway" />
+                    </div>
+
+                    <div class="form-control">
+                        <label for="dns" id="dns">
+                            DNS
+                        </label>
+                        <input type="text" id="dns" placeholder="Set DNS" />
+                    </div>
+                </div>
+
+                <button class="btn btn-form" type="submit" value="submit">
+                    Save
+                </button>
+            </form>
+        </div>
+        <!-- Broker PAGE -->
+        <div class="tabcontent" id="Broker">
+            <div class="title2">
+                <h1>Broker Configuration</h1>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="key" id="key">
+                        Antares Access Key
+                    </label>
+                    <input type="text" id="key" placeholder="Set Access Key" />
+                </div>
+
+                <div class="form-control">
+                    <label for="app" id="app">
+                        Antares Application Name
+                    </label>
+                    <input type="text" id="app" placeholder="Set App Name" />
+                </div>
+                <div class="form-control">
+                    <label for="device" id="device">
+                        Antares Device Name
+                    </label>
+                    <input type="text" id="device" placeholder="Set Device Name" />
+                </div>
+
+                <div class="form-control">
+                    <label for="subs" id="subs">
+                        Keyword Subscribe
+                    </label>
+                    <input type="text" id="subs" placeholder="Set Keyword Subscribe" />
+                </div>
+
+                <button class="btn btn-form" type="submit" value="submit">
+                    Save
+                </button>
+            </form>
+        </div>
+
+        <!-- Device PAGE -->
+        <div class="tabcontent" id="Device">
+            <div class="title2">
+                <h1>Device Configuration</h1>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="point" id="point">
+                        WiFi Access Point
+                    </label>
+                    <input type="text" id="point" placeholder="Set WiFi Access Point" />
+                </div>
+
+                <div class="form-control">
+                    <label for="ssid_wifi" id="ssid_wifi">
+                        WiFi SSID
+                    </label>
+                    <input type="text" id="ssid_wifi" placeholder="Set WiFi SSID" />
+                </div>
+                <div class="form-control">
+                    <label for="wifi_pass" id="wifi_pass">
+                        WiFi Password
+                    </label>
+                    <input type="password" id="wifi_pass" placeholder="Set WiFi Password" />
+                </div>
+
+                <div class="form-control">
+                    <label for="time" id="time">
+                        Report Time Interval
+                    </label>
+                    <input type="time" id="time" name="time" min="01:00" max="60:00" required />
+                </div>
+
+                <button class="btn btn-form" type="submit" value="submit">
+                    Save
+                </button>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
